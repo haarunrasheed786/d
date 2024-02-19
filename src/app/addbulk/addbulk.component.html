@@ -1,0 +1,15 @@
+<app-dashboard></app-dashboard>
+
+<!-- addbulk.component.html -->
+
+<div>
+  <h2>Add Bulk Contacts</h2>
+  <label for="fileInput">Select a CSV file:</label>
+  <input type="file" #fileInput id="fileInput" accept=".csv" style="display: none" (change)="onFileSelected($event)">
+  <button (click)="browseFiles()">Browse</button>
+<!--  <button (click)="uploadFile()">Upload</button>-->
+</div>
+
+
+
+
